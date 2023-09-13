@@ -1,0 +1,53 @@
+/* App Container */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Seating Layout Container */
+.seating-layout {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); /* Adjust the number of columns as needed */
+  gap: 10px; /* Adjust the gap between seats */
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Seat Styles */
+.seat {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  user-select: none;
+}
+
+/* Available Seat */
+.available {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+/* Booked Seat */
+.booked {
+  background-color: #f44336;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+/* Hover Effect */
+.seat:hover {
+  filter: brightness(1.2);
+  transition: filter 0.2s ease-in-out;
+}
